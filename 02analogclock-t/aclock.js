@@ -1,6 +1,10 @@
+setInterval(setClock, 1000)
+
 var houtHand = document.querySelector('[data-hour-hand]')
 var minuteHand = document.querySelector('[data-minute-hand]')
 var secondHand = document.querySelector('[data-secondHand-hand]')
+
+
 
 function setClock(){
     const currentDate = new Date();
@@ -22,3 +26,4 @@ function setRotation(element, rotationRatio){
 
 setClock()
 setInterval(setClock, 1000)
+
